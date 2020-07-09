@@ -1,5 +1,5 @@
 ### Hi there 👋
-- 🔭 I’m currently working on a data library
+- 🔭 I’m currently working on improving the quality of the code across all repos.
 
 <!--
 **ra312/ra312** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
