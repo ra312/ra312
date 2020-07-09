@@ -1,4 +1,6 @@
-### Hi there 👋
+### Hello 👋
+Hi,I'm Rauan, a Data Scientist who is passionate about making the world a better place with technology and science.
+
 - 🔭 I’m currently working on improving the quality of the code across all repos.
 
 <!--
