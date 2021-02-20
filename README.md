@@ -1,7 +1,8 @@
 ### Hello 👋
 Hi,I'm Rauan, a Data Scientist who is passionate about making the world a better place with technology and science.
 
-- 🔭 I’m currently working on improving the quality of the code across all repos.
+- 🔭 I’m currently working on revenue and churn prediction.
+- I also deployed Kubernetes cluster with the help of ambari-serverscientists 
 
 <!--
 **ra312/ra312** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
