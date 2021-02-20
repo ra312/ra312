@@ -3,8 +3,9 @@ Hi,I'm Rauan, a Data Scientist who is passionate about making the world a better
 
 - 🔭 I’m currently working on revenue and churn prediction.
 - I also deployed Kubernetes cluster with the help of ambari-serverscientists 
-- I am looking to collaborate on time series predictions with PyTorch
-- Ask me about quantum manifolds
+- I am looking to collaborate on MLOps software solutions (Feast, Data Ingestion Tools, ML Model registry)
+- I am currently learning about cloud-native systems and infrastructure
+- Ask me about quantum geometric manifolds and its applications
 - Pronous: he/him 
 <!--
 **ra312/ra312** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
