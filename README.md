@@ -2,7 +2,7 @@
 Hi,I'm Rauan, a Data Scientist who is passionate about making the world a better place with technology and science.
 
 - 🔭 I’m currently working on revenue and churn prediction.
-- I also deployed Kubernetes cluster with the help of ambari-serverscientists 
+- I am working on Kubernetes auto deployment (ambari and ansible).
 - I am looking to collaborate on MLOps software solutions (Feast, Data Ingestion Tools, ML Model registry)
 - I am currently learning about cloud-native systems and infrastructure
 - Ask me about quantum geometric manifolds and its applications
