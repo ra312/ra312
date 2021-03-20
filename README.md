@@ -8,6 +8,16 @@ Hi,I'm Rauan, a Data Scientist who is passionate about making the world a better
 - I am currently learning about cloud-native systems and infrastructure
 - Ask me about quantum geometric manifolds and its applications
 - Pronous: he/him 
+## Quick overview
+* GitHub stats:  
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <!-- Change the `github-readme-stats.anuraghazra1.vercel.app` to `github-readme-stats.vercel.app`  -->
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=filiptronicek&langs_count=8" />
+</a>
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=filiptronicek&show_icons=true&line_height=27&include_all_commits=true" alt="My github stats" />
+</a>  
+
 <!--
 https://github.com/ra312/ra312.git
 Hi,I'm Rauan, a Data Scientist working on revenue and churn prediction.
