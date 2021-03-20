@@ -1,5 +1,6 @@
 ### Hello 👋
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+
 Hi,I'm Rauan, a Data Scientist who is passionate about making the world a better place with technology and science.
 
 - 🔭 I’m currently working on revenue and churn prediction.
