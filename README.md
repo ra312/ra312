@@ -1,5 +1,5 @@
 ### Hello 👋
-[![Visits Badge](https://badges.pufler.dev/visits/sciencepal/sciencepal)](https://badges.pufler.dev/visits/sciencepal/sciencepal)
+[![Visits Badge](https://badges.pufler.dev/visits/ra312/ra312)](https://badges.pufler.dev/visits/ra312/ra312)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
 Hi,I'm Rauan, a Data Scientist who is passionate about making the world a better place with technology and science.
