@@ -8,6 +8,34 @@ Hi,I'm Rauan, a Data Scientist who is passionate about making the world a better
 - I am currently learning about cloud-native systems and infrastructure
 - Ask me about quantum geometric manifolds and its applications
 - Pronous: he/him 
+
+<h3>
+    
+```python
+​
+import json
+from dataclasses import asdict, dataclass
+
+
+@dataclass
+class Stack:
+    Python           : tuple = ("PySpark", "PyHive", "Pandas")
+    infrastructure   : tuple = ("Docker", "Ansible", "Apache Ambari", "Gitlab CI/CD", "Kubernetes", "Hadoop")
+    databases        : tuple = ("PostgreSQL", "Oracle", "IBM_DB")
+	machine_learning : tuple = ("TensorFlow", "Scikit-Learn", "Prophet", "xgboost", "HyperOpt") 
+    misc             : tuple = ("CentOS(RHEL)", "shell", "git", "Jira")
+    ongoing          : tuple = ("ZooKeeper", "Apache Knox", "Alpine Linux")
+
+    def serialize(self):
+        return json.dumps(asdict(self), indent=4)
+
+
+stack = Stack()
+print(stack.serialize())
+​
+```
+</h3>
+
 ## Quick overview
 * GitHub stats:  
 <a href="https://github.com/anuraghazra/github-readme-stats">
