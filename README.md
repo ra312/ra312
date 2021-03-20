@@ -22,7 +22,7 @@ class Stack:
     Python           : tuple = ("PySpark", "PyHive", "Pandas")
     infrastructure   : tuple = ("Docker", "Ansible", "Apache Ambari", "Gitlab CI/CD", "Kubernetes", "Hadoop")
     databases        : tuple = ("PostgreSQL", "Oracle", "IBM_DB")
-	machine_learning : tuple = ("TensorFlow", "Scikit-Learn", "Prophet", "xgboost", "HyperOpt") 
+    machine_learning : tuple = ("TensorFlow", "Scikit-Learn", "Prophet", "xgboost", "HyperOpt") 
     misc             : tuple = ("CentOS(RHEL)", "shell", "git", "Jira")
     ongoing          : tuple = ("ZooKeeper", "Apache Knox", "Alpine Linux")
 
