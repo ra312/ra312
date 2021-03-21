@@ -13,7 +13,6 @@ Hi,I'm Rauan, a Data Scientist who is passionate about making the world a better
 
 #### 👨🏻‍💻 Languages and Tools <br />
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
-![Docker](https://img.shields.io/badge/-Docker-000?&logo=Docker)
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png"></code>
 ![Kubernetes](https://img.shields.io/badge/-Kubernetes-000?&logo=Kubernetes)
 [![C](https://img.shields.io/badge/-C-000?&logo=C)](https://github.com/adamalston?tab=repositories&q=&type=&language=c)
