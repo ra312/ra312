@@ -37,10 +37,11 @@ from dataclasses import asdict, dataclass
 
 
 @dataclass
-class MLStack:
-    databases        : tuple = ("PostgreSQL", "Oracle", "IBM_DB")
-    machine_learning : tuple = ("TensorFlow", "Scikit-Learn", "Prophet", "xgboost", "HyperOpt") 
-    ongoing          : tuple = ("ZooKeeper", "Apache Knox", "Alpine Linux")
+class BigDataStack:
+    databases                   : tuple = ("PostgreSQL", "Oracle", "IBM_DB")
+    host_configuration          : tuple = ("ansible", "ambari-server")
+    data_processing             : tuple = ("Apache Spark")
+    distributed_coordination    : tuple = ("Apache ZooKeeper")
 
     def serialize(self):
         return json.dumps(asdict(self), indent=4)
