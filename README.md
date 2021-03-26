@@ -19,14 +19,14 @@ Hi,I'm Rauan, a Data Scientist who is passionate about making the world a better
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png"></code>
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/scikit-learn/scikit-learn.png"></code>
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bash/bash.png"></code>
-![SQL](https://img.shields.io/badge/-SQL-000?&logo=MySQL&logoColor=4479A1)
-![CI/CD](https://img.shields.io/badge/-CI%2FCD-000?&logo=CircleCI&logoColor=888)
-![Jira](https://img.shields.io/badge/-Jira-000?&logo=Jira-Software&logoColor=0052CC)
-![C++](https://img.shields.io/badge/-C++-000?&logo=c%2b%2b&logoColor=00599C)
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/linux/linux.png"></code>
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jupyter-notebook/jupyter-notebook.png"></code>
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"></code>
+![SQL](https://img.shields.io/badge/-SQL-000?&logo=MySQL&logoColor=4479A1)
+![CI/CD](https://img.shields.io/badge/-CI%2FCD-000?&logo=CircleCI&logoColor=888)
+![Jira](https://img.shields.io/badge/-Jira-000?&logo=Jira-Software&logoColor=0052CC)
+![C++](https://img.shields.io/badge/-C++-000?&logo=c%2b%2b&logoColor=00599C)
 <h3>
     
 ```python
@@ -37,9 +37,10 @@ from dataclasses import asdict, dataclass
 
 @dataclass
 class MLStack:
-    databases        : tuple = ("PostgreSQL", "Oracle", "IBM_DB")
-    machine_learning : tuple = ("TensorFlow", "Scikit-Learn", "Prophet", "xgboost", "HyperOpt") 
-    ongoing          : tuple = ("ZooKeeper", "Apache Knox", "Alpine Linux")
+    external_databases : tuple = ("PostgreSQL", "Oracle", "IBM_DB")
+    machine_learning   : tuple = ("TensorFlow", "Scikit-Learn", "Prophet", "xgboost", "HyperOpt") 
+    apache_stack       : tuple = ("Apache Spark", "Hive", "NiFi", "Flink", "Apache Knox")
+    ongoing            : tuple = ("ZooKeeper", "Alpine Linux")
 
     def serialize(self):
         return json.dumps(asdict(self), indent=4)
