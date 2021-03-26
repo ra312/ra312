@@ -40,6 +40,7 @@ class MLStack:
     external_databases : tuple = ("PostgreSQL", "Oracle", "IBM_DB")
     machine_learning   : tuple = ("TensorFlow", "Scikit-Learn", "Prophet", "xgboost", "HyperOpt") 
     apache_stack       : tuple = ("Apache Spark", "Hive", "NiFi", "Flink", "Apache Knox")
+    production         : tuple = ("Kubeflow","Luigi", "Airflow")
     ongoing            : tuple = ("ZooKeeper", "Alpine Linux")
 
     def serialize(self):
