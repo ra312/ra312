@@ -2,7 +2,7 @@
 [![Visits Badge](https://badges.pufler.dev/visits/ra312/ra312)](https://badges.pufler.dev/visits/ra312/ra312)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
-Hi,I'm Rauan, a Data Scientist who is passionate about making the world a better place with technology and science.
+Hi,I'm Rauan, a Machine Learning Engineer/Scientist who is passionate about making the world a better place with technology and science.
 
 - 🔭 I’m currently working on revenue and churn prediction while building the analytics platfrom (Apache & Kubernetes)
 - I am using ambari and ansible to automate Kubernetes cluster set-up
