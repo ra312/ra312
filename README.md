@@ -2,9 +2,9 @@
 [![Visits Badge](https://badges.pufler.dev/visits/ra312/ra312)](https://badges.pufler.dev/visits/ra312/ra312)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
-Hi,I'm Rauan, a Machine Learning Engineer/Scientist who is passionate about making the world a better place with technology and science.
+Hi,I'm Rauan, a Machine Learning Engineer who is passionate about making the world a better place with technology and science.
 
-- 🔭 I’m currently working on revenue and churn prediction while building the analytics platfrom (Apache & Kubernetes)
+- 🔭 I’m currently working on deploying ML models into the analytics platfrom (Apache Hadoop & Kubernetes)
 - I am using ambari and ansible to automate Kubernetes cluster set-up
 - I am looking to collaborate on MLOps software solutions (Feast-Core, Data Ingestion Tools, ML Model registry)
 - I am currently learning about cloud-native systems and infrastructure
