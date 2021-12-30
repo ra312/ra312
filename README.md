@@ -4,12 +4,7 @@
 
 Hi,I'm Rauan, a Machine Learning Engineer who is passionate about making the world a better place with technology and science.
 
-- 🔭 I’m currently working on deploying ML models into the analytics platfrom (Apache Hadoop & Kubernetes)
-- I am using ambari and ansible to automate Kubernetes cluster set-up
-- I am looking to collaborate on MLOps software solutions (Feast-Core, Data Ingestion Tools, ML Model registry)
-- I am currently learning about cloud-native systems and infrastructure
-- Ask me about quantum geometric manifolds and its applications
-- Pronous: he/him 
+- 🔭 I’m currently working on automating ML model deployment and tracking in production (Apache Hadoop & Kubernetes)
 
 #### 👨🏻‍💻 Languages and Tools <br />
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
