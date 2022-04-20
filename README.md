@@ -2,9 +2,9 @@
 [![Visits Badge](https://badges.pufler.dev/visits/ra312/ra312)](https://badges.pufler.dev/visits/ra312/ra312)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
-Hi,I'm Rauan, a Machine Learning Engineer who is passionate about making the world a better place with technology and science.
+Hi,I'm Rauan, a Software Engineer who is passionate about making the world a better place with Machine Learning Engineer and Research.
 
-- 🔭 I’m currently working on automating ML model deployment and tracking in production (Apache Hadoop & Kubernetes)
+- 🔭 I usually work on automating and orchestrating custom pipelines for data extraction, ML model deployment and tracking in production (Google Kubernetes Engine, Vertex AI)
 
 #### 👨🏻‍💻 Languages and Tools <br />
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
@@ -33,10 +33,11 @@ from dataclasses import asdict, dataclass
 @dataclass
 class MLStack:
     external_databases : tuple = ("PostgreSQL", "Oracle", "IBM_DB")
-    machine_learning   : tuple = ("TensorFlow", "Scikit-Learn", "Prophet", "xgboost", "HyperOpt") 
+    machine_learning   : tuple = ("TensorFlow", "Scikit-Learn", "PyTorch", "xgBoost", "HyperOpt") 
     apache_stack       : tuple = ("Apache Spark", "Hive", "NiFi", "Flink", "Apache Knox")
-    production         : tuple = ("Kubeflow","Luigi", "Airflow")
-    ongoing            : tuple = ("ZooKeeper", "Alpine Linux")
+    cloud_stack        : tuple = ("Google Kubernetes Engine")
+    production         : tuple = ("Vertex AI", "Kubeflow","Luigi", "Airflow")
+    os                 : tuple = ("ZooKeeper", "Alpine Linux")
 
     def serialize(self):
         return json.dumps(asdict(self), indent=4)
