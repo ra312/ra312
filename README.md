@@ -2,7 +2,7 @@
 [![Visits Badge](https://badges.pufler.dev/visits/ra312/ra312)](https://badges.pufler.dev/visits/ra312/ra312)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
-Hi,I'm Rauan, a Software Engineer who is passionate about making the world a better place with Machine Learning Engineer and Research.
+Hi,I'm Rauan, a Software Engineer who is passionate about making the world a better place by engineering machine-human-machine interaction
 
 - 🔭 I usually work on automating and orchestrating custom pipelines for data extraction, ML model deployment and tracking in production (Google Kubernetes Engine, Vertex AI)
 
