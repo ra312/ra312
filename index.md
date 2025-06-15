@@ -1,37 +1,59 @@
-## Welcome to GitHub Pages
+# 👋 Hi, I'm **Rauan Akylzhanov**
 
-You can use the [editor on GitHub](https://github.com/ra312/ra312/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+PhD (Mathematics) · Senior AI/ML Engineer · Researcher in Large Language Models
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+> *Bridging rigorous mathematics and applied AI to push the frontier of large‑scale language understanding.*
 
-### Markdown
+---
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 🔭 What I’m Working On
 
-```markdown
-Syntax highlighted code block
+- **Decentralized AI infrastructure** – orchestrating large‑scale async LLM benchmarking pipelines (OpenAI‑compatible & vLLM endpoints) with pairwise ranking and graph‑based aggregation.
+- **AI research** – path‑signature embeddings and von Neumann/C∗‑algebra spectral methods for Transformer stability.
+- **Efficiency tooling** – open‑sourcing LoRA + FSDP training scripts, multi‑GPU data streaming, and FlashAttention v2 kernels on Apple Silicon.
+- **Global Talent Visa (UK Route 4)** – preparing peer‑review endorsement materials.
 
-# Header 1
-## Header 2
-### Header 3
+## 🧰 Tech & Toolbox
 
-- Bulleted
-- List
+`Python` · `Rust` · `PyTorch` · `Hugging Face` · `vLLM` · `Kubernetes` · `Docker` · `Helm` · `Swift/Metal` · `FastAPI` · `LangChain` · `OpenAI API` · `GitHub Actions`
 
-1. Numbered
-2. List
+## 📚 Featured Projects
 
-**Bold** and _Italic_ and `Code` text
+| Project | Brief | Tech |
+|---------|-------|------|
+| **Nemesis** | LLaMA‑based *AI Scientist* pretrained on 1.5 M arXiv articles with LoRA & FlashAttention. | PyTorch, FSDP, LoRA |
+| **LLM‑Ranking‑Benchmark** | Async pipeline evaluating multiple endpoints, quicksort‑style pairwise ranking, rich metrics & dashboards. | Python, asyncio, vLLM, Grafana |
+| **RoughPath‑Embeddings** | Novel text embeddings via log‑signature transforms; early results on IMDB & BeIR tasks. | roughpy, scikit‑learn, in progress|
 
-[Link](url) and ![Image](src)
-```
+## 📝 Selected Publications & Preprints
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+- **SIG‑Bound MoE** (2025, preprint) — Dynamic sparse Transformer with non‑commutative Chebyshev spectral guarantees.
+Contractions of Lie Groups and Their Applications — Journal of Mathematical Physics, 2016
+Smooth Dense Subalgebras of Quantum Groups — Advances in Operator Algebras, 2019
+ 
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ra312/ra312/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## 🌱 Currently Learning / Exploring
 
-### Support or Contact
+- Test‑time scaling for prompt efficiency.
+- Fine‑grained MoE routing strategies.
+- Swift‑accelerated FlashAttention kernels.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## 💬 Ask Me About
+
+LLM system design & deployment | Spectral methods | Crypto‑friendly MLOps | Academic‑industry career paths
+
+## 🌍 Location & Availability
+
+Almaty, Kazakhstan (UTC +06:00) · Remote‑friendly.
+
+## 📫 Reach Out
+
+- **GitHub Issues/Discussions**
+- **LinkedIn:** [linkedin.com/in/rauan‑akylzhanov](https://linkedin.com/in/rauan-akylzhanov)
+- **X / Twitter:** [@akylzhanov](https://twitter.com/akylzhanov)
+
+---
+
+*Tech is a playground; research is the game.*
+
