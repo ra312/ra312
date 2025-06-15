@@ -1,59 +1,104 @@
-# 👋 Hi, I'm **Rauan Akylzhanov**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rauan Akylzhanov — Personal Website</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #fdfdfd;
+      color: #222;
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    .section {
+      margin-bottom: 2em;
+    }
+  </style>
+</head>
+<body>
 
-PhD (Mathematics) · Senior AI/ML Engineer · Researcher in Large Language Models
+  <h1>👋 Hi, I’m Rauan Akylzhanov</h1>
+  <p><strong>PhD in Mathematics</strong> · AI/ML Systems Engineer · LLM Researcher · Spectral Theorist</p>
 
-> *Bridging rigorous mathematics and applied AI to push the frontier of large‑scale language understanding.*
+  <div class="section">
+    <h2>📖 My Story</h2>
+    <p>
+      I’m a researcher and machine learning engineer with a PhD in mathematics from Imperial College London.
+      My early academic work focused on operator algebras, quantum groups, and representation theory. Over time, I transitioned into
+      applied AI systems — where I now build large-scale LLM evaluation pipelines, design efficient fine-tuning setups (LoRA, FlashAttention),
+      and investigate stability of transformers using spectral and algebraic tools.
+    </p>
+    <p>
+      My mission is to bring theoretical depth into scalable machine learning systems — blending rigorous math with high-performance engineering.
+    </p>
+  </div>
 
----
+  <div class="section">
+    <h2>🔭 Research & Systems Work</h2>
+    <ul>
+      <li>⚙️ Architecting async LLM benchmarking pipelines (OpenAI/vLLM endpoints, pairwise ranking, graph-based sorting)</li>
+      <li>📐 Developing novel log-signature-based text embeddings with rough path theory</li>
+      <li>🚀 Accelerating LoRA and FlashAttention v2 training for LLaMA-family models on Apple Silicon and multi-GPU setups</li>
+      <li>🔒 Researching von Neumann algebra spectral bounds to stabilize attention layer entropy</li>
+    </ul>
+  </div>
 
-## 🔭 What I’m Working On
+  <div class="section">
+    <h2>📝 Selected Publications & Preprints</h2>
+    <ul>
+      <li><em>Von Neumann Algebraic Methods for Analytical Inequalities</em> — Imperial College London, 2018</li>
+      <li><em>Contractions of Lie Groups and Their Applications</em> — Journal of Mathematical Physics, 2016</li>
+      <li><em>Smooth Dense Subalgebras of Quantum Groups</em> — Advances in Operator Algebras, 2019</li>
+      <li><strong>SIG-Bound MoE</strong> (2025, preprint) — Dynamic sparse Transformer with non-commutative Chebyshev spectral guarantees</li>
+    </ul>
+  </div>
 
-- **Decentralized AI infrastructure** – orchestrating large‑scale async LLM benchmarking pipelines (OpenAI‑compatible & vLLM endpoints) with pairwise ranking and graph‑based aggregation.
-- **AI research** – path‑signature embeddings and von Neumann/C∗‑algebra spectral methods for Transformer stability.
-- **Efficiency tooling** – open‑sourcing LoRA + FSDP training scripts, multi‑GPU data streaming, and FlashAttention v2 kernels on Apple Silicon.
-- **Global Talent Visa (UK Route 4)** – preparing peer‑review endorsement materials.
+  <div class="section">
+    <h2>📂 Featured Projects</h2>
+    <ul>
+      <li><strong>Nemesis:</strong> A LLaMA-based AI Scientist trained on 1.5M arXiv papers using FlashAttention + LoRA</li>
+      <li><strong>LLM-Ranking-Benchmark:</strong> Large-scale async ranking pipeline with judgment collection and metrics tracking</li>
+      <li><strong>RoughPath-Embeddings:</strong> Prototype system for embedding text using log-signatures of token paths</li>
+    </ul>
+  </div>
 
-## 🧰 Tech & Toolbox
+  <div class="section">
+    <h2>💬 Topics I Explore</h2>
+    <p>
+      Large Language Models · Spectral Methods in Deep Learning · Transformer Stability · Efficient Fine-Tuning · Crypto-Native MLOps · Math-AI Interface
+    </p>
+  </div>
 
-`Python` · `Rust` · `PyTorch` · `Hugging Face` · `vLLM` · `Kubernetes` · `Docker` · `Helm` · `Swift/Metal` · `FastAPI` · `LangChain` · `OpenAI API` · `GitHub Actions`
+  <div class="section">
+    <h2>📫 Contact</h2>
+    <ul>
+      <li><a href="https://github.com/ra312">GitHub: @ra312</a></li>
+      <li><a href="https://linkedin.com/in/rauan-akylzhanov">LinkedIn: /rauan-akylzhanov</a></li>
+      <li><a href="https://twitter.com/akylzhanov">X (Twitter): @akylzhanov</a></li>
+    </ul>
+  </div>
 
-## 📚 Featured Projects
+  <hr/>
+  <p><em>“Tech is a playground; research is the game.”</em></p>
 
-| Project | Brief | Tech |
-|---------|-------|------|
-| **Nemesis** | LLaMA‑based *AI Scientist* pretrained on 1.5 M arXiv articles with LoRA & FlashAttention. | PyTorch, FSDP, LoRA |
-| **LLM‑Ranking‑Benchmark** | Async pipeline evaluating multiple endpoints, quicksort‑style pairwise ranking, rich metrics & dashboards. | Python, asyncio, vLLM, Grafana |
-| **RoughPath‑Embeddings** | Novel text embeddings via log‑signature transforms; early results on IMDB & BeIR tasks. | roughpy, scikit‑learn, in progress|
-
-## 📝 Selected Publications & Preprints
-
-- **SIG‑Bound MoE** (2025, preprint) — Dynamic sparse Transformer with non‑commutative Chebyshev spectral guarantees.
-Contractions of Lie Groups and Their Applications — Journal of Mathematical Physics, 2016
-Smooth Dense Subalgebras of Quantum Groups — Advances in Operator Algebras, 2019
- 
-
-
-## 🌱 Currently Learning / Exploring
-
-- Test‑time scaling for prompt efficiency.
-- Fine‑grained MoE routing strategies.
-- Swift‑accelerated FlashAttention kernels.
-
-## 💬 Ask Me About
-
-LLM system design & deployment | Spectral methods | Crypto‑friendly MLOps | Academic‑industry career paths
-
-## 🌍 Location & Availability
-
-Almaty, Kazakhstan (UTC +06:00) · Remote‑friendly.
-
-## 📫 Reach Out
-
-- **GitHub Issues/Discussions**
-- **LinkedIn:** [linkedin.com/in/rauan‑akylzhanov](https://linkedin.com/in/rauan-akylzhanov)
-- **X / Twitter:** [@akylzhanov](https://twitter.com/akylzhanov)
-
----
-
-*Tech is a playground; research is the game.*
-
+</body>
+</html>
