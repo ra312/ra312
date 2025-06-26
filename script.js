@@ -324,9 +324,14 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Initialize particles
+// Initialize particles and MathJax
 document.addEventListener('DOMContentLoaded', () => {
     createParticles();
+    
+    // Ensure MathJax renders after page load
+    if (window.MathJax) {
+        MathJax.typesetPromise().catch((err) => console.log('MathJax typeset failed: ' + err.message));
+    }
 });
 
 // Performance optimization: Throttle scroll events

@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- MathJax for LaTeX rendering -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -75,6 +93,13 @@
                         My journey in technology has been driven by curiosity and a desire to make a positive impact 
                         through code. I believe in continuous learning, clean code practices, and collaborative 
                         problem-solving.
+                    </p>
+                    <p>
+                        I'm particularly interested in the intersection of mathematics and technology. For example, 
+                        understanding algorithms through mathematical foundations like $O(n \log n)$ complexity 
+                        or implementing machine learning models with equations such as:
+                        $$f(x) = \frac{1}{1 + e^{-x}}$$
+                        This sigmoid function is fundamental in neural networks and logistic regression.
                     </p>
                     <div class="about-stats">
                         <div class="stat">
