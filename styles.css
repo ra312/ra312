@@ -641,6 +641,328 @@ section {
     }
 }
 
+/* Mathematical Content Styling */
+
+/* Theorem and Definition Boxes */
+.theorem, .definition, .lemma, .corollary, .proposition {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-left: 4px solid #2563eb;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.theorem::before, .definition::before, .lemma::before, 
+.corollary::before, .proposition::before {
+    content: attr(data-type);
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    background: #2563eb;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.definition {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border-left-color: #059669;
+}
+
+.definition::before {
+    background: #059669;
+}
+
+.lemma {
+    background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
+    border-left-color: #d97706;
+}
+
+.lemma::before {
+    background: #d97706;
+}
+
+.corollary {
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+    border-left-color: #c026d3;
+}
+
+.corollary::before {
+    background: #c026d3;
+}
+
+/* Proof Environment */
+.proof {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    position: relative;
+    font-style: italic;
+}
+
+.proof::before {
+    content: "Proof:";
+    font-weight: bold;
+    font-style: normal;
+    color: #1e293b;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.proof::after {
+    content: "∎";
+    float: right;
+    font-size: 1.2rem;
+    color: #2563eb;
+    font-style: normal;
+    margin-top: 0.5rem;
+}
+
+/* Mathematical Equations Enhancement */
+.equation-container {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.equation-container .equation-label {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #2563eb;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.inline-math {
+    background: rgba(37, 99, 235, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Computer Modern', serif;
+}
+
+/* Academic Citations */
+.citation {
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px dotted #2563eb;
+    transition: all 0.3s ease;
+}
+
+.citation:hover {
+    background: rgba(37, 99, 235, 0.1);
+    border-radius: 3px;
+    padding: 0.1rem 0.2rem;
+}
+
+.citation::before {
+    content: "[";
+}
+
+.citation::after {
+    content: "]";
+}
+
+/* Footnotes */
+.footnote {
+    font-size: 0.8rem;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+}
+
+.footnote-ref {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.8rem;
+    vertical-align: super;
+    font-weight: 600;
+}
+
+/* Academic Lists */
+.academic-list {
+    list-style: none;
+    counter-reset: academic-counter;
+}
+
+.academic-list li {
+    counter-increment: academic-counter;
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.academic-list li::before {
+    content: counter(academic-counter, decimal) ".";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    color: #2563eb;
+    font-weight: 600;
+    width: 2rem;
+}
+
+/* Algorithm Pseudo-code */
+.algorithm {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    font-family: 'Courier New', monospace;
+    position: relative;
+    overflow-x: auto;
+}
+
+.algorithm::before {
+    content: "Algorithm";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: #059669;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.algorithm .keyword {
+    color: #60a5fa;
+    font-weight: bold;
+}
+
+.algorithm .comment {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.algorithm .variable {
+    color: #fbbf24;
+}
+
+/* Mathematical Symbols and Notations */
+.math-symbol {
+    font-size: 1.2em;
+    color: #2563eb;
+    font-weight: bold;
+    margin: 0 0.2rem;
+}
+
+/* Research Methodology Boxes */
+.methodology {
+    background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+    border: 1px solid #a855f7;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.methodology-title {
+    color: #7c3aed;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.methodology-title::before {
+    content: "🔬";
+    font-size: 1.2rem;
+}
+
+/* Complexity Analysis */
+.complexity {
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+    border-left: 4px solid #f59e0b;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.complexity-title {
+    font-weight: 600;
+    color: #92400e;
+    margin-bottom: 0.5rem;
+}
+
+.big-o {
+    font-family: 'Computer Modern', serif;
+    font-style: italic;
+    color: #d97706;
+    font-weight: bold;
+}
+
+/* Research Question Highlight */
+.research-question {
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    border: 2px dashed #059669;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #065f46;
+}
+
+.research-question::before {
+    content: "❓ Research Question: ";
+    font-weight: bold;
+    font-style: normal;
+    color: #059669;
+}
+
+/* Mathematical Proof Steps */
+.proof-step {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    border-left: 2px solid #e2e8f0;
+    position: relative;
+}
+
+.proof-step::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: -12px;
+    top: 0;
+    background: #2563eb;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.proof-steps {
+    counter-reset: step-counter;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -651,6 +973,30 @@ section {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@keyframes mathHighlight {
+    0% { background-color: transparent; }
+    50% { background-color: rgba(37, 99, 235, 0.2); }
+    100% { background-color: transparent; }
+}
+
+.math-animate {
+    animation: mathHighlight 2s ease-in-out;
+}
+
+/* Hover Effects for Mathematical Elements */
+.theorem:hover, .definition:hover, .lemma:hover, 
+.corollary:hover, .proposition:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
+    transition: all 0.3s ease;
+}
+
+.equation-container:hover {
+    background: #f1f5f9;
+    border-color: #2563eb;
+    transition: all 0.3s ease;
 }
 
 .hero-content > * {
@@ -676,6 +1022,46 @@ section {
 /* Smooth scrolling offset for fixed navbar */
 section {
     scroll-margin-top: 70px;
+}
+
+/* Additional button styles for blog */
+.btn-sm {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.btn-outline:hover {
+    background-color: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.draft-badge {
+    background: #f59e0b;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Loading animation for project cards */

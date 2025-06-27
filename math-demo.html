@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Content Demo - Rauan Akylzhanov</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- MathJax for LaTeX rendering -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Rauan Akylzhanov</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Math Demo</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding-top: 100px;">
+        <div class="container">
+            <h1 class="section-title">Mathematical Content Styling Demo</h1>
+            
+            <!-- Theorem Example -->
+            <div class="theorem" data-type="Theorem 1">
+                <strong>Fundamental Theorem of Arithmetic:</strong> Every integer greater than 1 either is a prime number itself or can be represented as a unique product of prime numbers.
+                
+                <div class="equation-container">
+                    <span class="equation-label">(1)</span>
+                    $$n = p_1^{a_1} \cdot p_2^{a_2} \cdot \ldots \cdot p_k^{a_k}$$
+                </div>
+                
+                where $p_1, p_2, \ldots, p_k$ are distinct primes and $a_1, a_2, \ldots, a_k$ are positive integers.
+            </div>
+
+            <!-- Definition Example -->
+            <div class="definition" data-type="Definition 1">
+                <strong>Big O Notation:</strong> A function $f(n)$ is said to be <span class="inline-math">$O(g(n))$</span> if there exist positive constants $c$ and $n_0$ such that:
+                
+                <div class="equation-container">
+                    <span class="equation-label">(2)</span>
+                    $$f(n) \leq c \cdot g(n) \text{ for all } n \geq n_0$$
+                </div>
+            </div>
+
+            <!-- Lemma Example -->
+            <div class="lemma" data-type="Lemma 1">
+                <strong>Euclid's Lemma:</strong> If a prime $p$ divides the product $ab$, then $p$ divides $a$ or $p$ divides $b$.
+            </div>
+
+            <!-- Proof Example -->
+            <div class="proof">
+                <div class="proof-steps">
+                    <div class="proof-step">
+                        Let $p$ be a prime number and suppose $p \mid ab$.
+                    </div>
+                    <div class="proof-step">
+                        If $p \mid a$, then we are done.
+                    </div>
+                    <div class="proof-step">
+                        If $p \nmid a$, then since $p$ is prime, we have $\gcd(p, a) = 1$.
+                    </div>
+                    <div class="proof-step">
+                        By Bézout's identity, there exist integers $x$ and $y$ such that $px + ay = 1$.
+                    </div>
+                    <div class="proof-step">
+                        Multiplying both sides by $b$: $pxb + aby = b$.
+                    </div>
+                    <div class="proof-step">
+                        Since $p \mid ab$, we have $p \mid (pxb + aby)$, therefore $p \mid b$.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Algorithm Example -->
+            <div class="algorithm">
+                <strong>Euclidean Algorithm</strong><br><br>
+                <span class="keyword">function</span> <span class="variable">gcd</span>(a, b):<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">while</span> <span class="variable">b</span> ≠ 0:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">temp</span> = <span class="variable">b</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">b</span> = <span class="variable">a</span> <span class="keyword">mod</span> <span class="variable">b</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">a</span> = <span class="variable">temp</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="variable">a</span><br><br>
+                <span class="comment">// Time complexity: O(log min(a, b))</span>
+            </div>
+
+            <!-- Complexity Analysis -->
+            <div class="complexity">
+                <div class="complexity-title">Complexity Analysis</div>
+                <p>The time complexity of the Euclidean algorithm is <span class="big-o">O(log min(a, b))</span>, making it highly efficient for computing greatest common divisors.</p>
+                <p>Space complexity: <span class="big-o">O(1)</span> for the iterative version.</p>
+            </div>
+
+            <!-- Research Question -->
+            <div class="research-question">
+                Can we develop a quantum algorithm that computes the greatest common divisor faster than the classical Euclidean algorithm?
+            </div>
+
+            <!-- Methodology -->
+            <div class="methodology">
+                <div class="methodology-title">Research Methodology</div>
+                <ol class="academic-list">
+                    <li>Literature review of existing quantum algorithms for number theory</li>
+                    <li>Analysis of quantum circuit complexity for GCD computation</li>
+                    <li>Implementation and simulation using quantum programming frameworks</li>
+                    <li>Comparative analysis with classical algorithms</li>
+                </ol>
+            </div>
+
+            <!-- Corollary Example -->
+            <div class="corollary" data-type="Corollary 1">
+                <strong>Corollary of Fundamental Theorem of Arithmetic:</strong> Every positive integer has a unique prime factorization up to the order of the factors.
+            </div>
+
+            <!-- Academic Citation Example -->
+            <p>
+                The concept of algorithmic complexity was first formalized by <a href="#" class="citation">Knuth, 1976</a> 
+                and later extended by <a href="#" class="citation">Cormen et al., 2009</a>. 
+                Recent advances in quantum computing <a href="#" class="citation footnote-ref">1</a> have opened new 
+                possibilities for computational complexity theory.
+            </p>
+
+            <!-- Footnote -->
+            <div class="footnote">
+                <strong>1.</strong> Quantum algorithms have shown exponential speedups for certain problems, 
+                such as integer factorization (Shor's algorithm) and database search (Grover's algorithm).
+            </div>
+
+            <!-- Mathematical symbols demonstration -->
+            <p style="margin: 2rem 0;">
+                Mathematical symbols: 
+                <span class="math-symbol">∀</span> (for all),
+                <span class="math-symbol">∃</span> (there exists),
+                <span class="math-symbol">∈</span> (element of),
+                <span class="math-symbol">⊆</span> (subset),
+                <span class="math-symbol">∩</span> (intersection),
+                <span class="math-symbol">∪</span> (union),
+                <span class="math-symbol">≡</span> (congruent),
+                <span class="math-symbol">≈</span> (approximately equal)
+            </p>
+
+            <!-- Interactive equation example -->
+            <div class="equation-container math-animate">
+                <span class="equation-label">(3)</span>
+                $$\lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = e$$
+            </div>
+
+            <p style="text-align: center; margin: 2rem 0; color: #64748b;">
+                <em>This demo showcases the enhanced mathematical content styling. 
+                You can now use these classes in your main website and blog posts!</em>
+            </p>
+        </div>
+    </main>
+
+    <script>
+        // Add some interactivity to demonstrate animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate math symbols on hover
+            const mathSymbols = document.querySelectorAll('.math-symbol');
+            mathSymbols.forEach(symbol => {
+                symbol.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.2)';
+                    this.style.transition = 'transform 0.3s ease';
+                });
+                symbol.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+
+            // Add click animation to equation containers
+            const equations = document.querySelectorAll('.equation-container');
+            equations.forEach(eq => {
+                eq.addEventListener('click', function() {
+                    this.classList.add('math-animate');
+                    setTimeout(() => {
+                        this.classList.remove('math-animate');
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
