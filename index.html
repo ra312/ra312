@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rauan Akylzhanov - Personal Website</title>
-    <meta name="description" content="Personal website of Rauan Akylzhanov - Developer, Innovator, Problem Solver">
-    <link rel="stylesheet" href="styles.css">
+    <title>Rauan Akylzhanov - Personal Page</title>
+    <meta name="description" content="Personal website of Rauan Akylzhanov - Developer, AI Researcher, Problem Solver">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
     
     <!-- MathJax for LaTeX rendering -->
     <script>
@@ -27,262 +34,268 @@
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Rauan Akylzhanov</a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="blog.html" class="nav-link">Blog</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+<body id="page-top">
+    <!-- Sidebar Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-none d-lg-block">
+                <div class="profile-image-container">
+                    <i class="fas fa-user-circle profile-icon"></i>
+                </div>
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#research">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Rauan Akylzhanov</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Developer & Technology Enthusiast
+    <div class="container-fluid p-0">
+        <!-- About Section -->
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+            <div class="w-100">
+                <h1 class="mb-3">Rauan Akylzhanov</h1>
+                <div class="subheading mb-3">
+                    <a href="mailto:akylzhanov.r@gmail.com">akylzhanov.r@gmail.com</a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://github.com/ra312">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/rauan-akylzhanov">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/rauanakylzhanov">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+                <p class="lead mb-3">
+                    Software engineer and AI researcher.
+                    Passionate about mathematics, algorithms, and creating meaningful technology.
                 </p>
-                <p class="hero-description">
-                    Passionate about creating innovative solutions and building meaningful digital experiences.
+
+                <p class="lead mb-3 bold">Primary interests:</p>
+                <p>
+                    <ul>
+                        <li>Developing algorithms and systems that solve complex computational problems</li>
+                        <li>Exploring the mathematical foundations of machine learning and artificial intelligence</li>
+                        <li>Building scalable web applications with modern technologies</li>
+                        <li>Understanding and implementing efficient data structures and algorithms</li>
+                        <li>Contributing to open-source projects that democratize technology access</li>
+                    </ul>
                 </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
             </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-img">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Welcome to my digital space! I'm Rauan Akylzhanov, a dedicated developer with a passion for 
-                        creating innovative solutions and meaningful digital experiences. With a strong foundation in 
-                        modern technologies and a keen eye for detail, I enjoy tackling complex challenges and 
-                        turning ideas into reality.
-                    </p>
-                    <p>
-                        My journey in technology has been driven by curiosity and a desire to make a positive impact 
-                        through code. I believe in continuous learning, clean code practices, and collaborative 
-                        problem-solving.
-                    </p>
-                    <p>
-                        I'm particularly interested in the intersection of mathematics and technology. For example, 
-                        understanding algorithms through mathematical foundations like $O(n \log n)$ complexity 
-                        or implementing machine learning models with equations such as:
-                        $$f(x) = \frac{1}{1 + e^{-x}}$$
-                        This sigmoid function is fundamental in neural networks and logistic regression.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Years Experience</p>
+        <hr class="m-0">
+
+        <!-- Projects Section -->
+        <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
+            <div class="w-100">
+                <h2 class="mb-5">Projects</h2>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h3 class="mb-0">Personal Website & Blog Platform</h3>
+                        <div class="subheading mb-3">Full-Stack Web Application</div>
+                        <div class="box-item">
+                            <p>A comprehensive personal website featuring a dynamic blog system with mathematical content support, 
+                            built using modern web technologies. Includes LaTeX rendering capabilities and responsive design.</p>
+                            <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, MathJax, Bootstrap</p>
+                            <a href="https://ra312.github.io/ra312/">Live Demo</a> | 
+                            <a href="https://github.com/ra312/ra312">GitHub Repository</a>
                         </div>
-                        <div class="stat">
-                            <h3>20+</h3>
-                            <p>Projects Completed</p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">2024</span>
+                    </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h3 class="mb-0">Algorithm Visualization Tool</h3>
+                        <div class="subheading mb-3">Educational Software</div>
+                        <div class="box-item">
+                            <p>Interactive web application for visualizing sorting algorithms, graph traversal, and data structures. 
+                            Designed to help students understand algorithmic concepts through visual representations.</p>
+                            <p><strong>Technologies:</strong> React, D3.js, Node.js, TypeScript</p>
+                            <p><strong>Complexity Analysis:</strong> Implemented visualizations for O(n²), O(n log n), and O(n) algorithms</p>
                         </div>
-                        <div class="stat">
-                            <h3>100%</h3>
-                            <p>Client Satisfaction</p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">2024</span>
+                    </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h3 class="mb-0">Mathematical Content Management System</h3>
+                        <div class="subheading mb-3">Academic Tool</div>
+                        <div class="box-item">
+                            <p>A specialized CMS for managing mathematical content with support for LaTeX equations, 
+                            theorem environments, and academic paper formatting. Features include proof validation and citation management.</p>
+                            <p><strong>Technologies:</strong> Python, Django, PostgreSQL, MathJax</p>
                         </div>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">2023-2024</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">HTML5</span>
-                        <span class="skill-item">CSS3</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">Vue.js</span>
-                        <span class="skill-item">TypeScript</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Node.js</span>
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">Express</span>
-                        <span class="skill-item">Django</span>
-                        <span class="skill-item">PostgreSQL</span>
-                        <span class="skill-item">MongoDB</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">AWS</span>
-                        <span class="skill-item">Linux</span>
-                        <span class="skill-item">Figma</span>
-                        <span class="skill-item">Agile</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <hr class="m-0">
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce solution with modern UI/UX, payment integration, and admin dashboard.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
+        <!-- Research Section -->
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="research">
+            <div class="w-100">
+                <h2 class="mb-5">Research Interests</h2>
                 
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>A productivity app with real-time collaboration, drag-and-drop interface, and analytics.</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Express</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                        </div>
+                <div class="box-item mb-4">
+                    <h3>Algorithmic Complexity Theory</h3>
+                    <p>Investigating the theoretical foundations of computational complexity, with particular focus on 
+                    the relationship between mathematical structures and algorithmic efficiency. Current work includes 
+                    analysis of graph algorithms and their optimal bounds.</p>
+                    
+                    <div class="equation-container">
+                        <span class="equation-label">(1)</span>
+                        $$T(n) = O(f(n)) \text{ where } \lim_{n \to \infty} \frac{T(n)}{f(n)} \leq c$$
                     </div>
                 </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-chart-line"></i>
+
+                <div class="box-item mb-4">
+                    <h3>Machine Learning & Optimization</h3>
+                    <p>Exploring optimization techniques in machine learning, particularly gradient descent variants 
+                    and their convergence properties. Research includes both theoretical analysis and practical implementations.</p>
+                    
+                    <div class="equation-container">
+                        <span class="equation-label">(2)</span>
+                        $$\theta_{t+1} = \theta_t - \alpha \nabla J(\theta_t)$$
                     </div>
-                    <div class="project-content">
-                        <h3>Data Visualization Tool</h3>
-                        <p>Interactive dashboard for data analysis with customizable charts and real-time updates.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>D3.js</span>
-                            <span>Flask</span>
+                </div>
+
+                <div class="box-item">
+                    <h3>Web Performance & Scalability</h3>
+                    <p>Researching methods to optimize web application performance through algorithmic improvements, 
+                    caching strategies, and distributed system design patterns.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0">
+
+        <!-- Publications Section -->
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
+            <div class="w-100">
+                <h2 class="mb-5">Publications & Essays</h2>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h3 class="mb-0">"Understanding Algorithm Complexity Through Mathematical Analysis"</h3>
+                        <div class="subheading mb-3">Technical Blog Post</div>
+                        <div class="box-item">
+                            <p>A comprehensive guide to analyzing algorithmic complexity using mathematical foundations. 
+                            Covers Big O notation, asymptotic analysis, and practical examples with visual representations.</p>
+                            <a href="blog.html">Read on Blog</a>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">2024</span>
+                    </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h3 class="mb-0">"Modern Web Development: Bridging Theory and Practice"</h3>
+                        <div class="subheading mb-3">Technical Article</div>
+                        <div class="box-item">
+                            <p>Explores the intersection of theoretical computer science concepts and practical web development, 
+                            focusing on how algorithmic thinking improves software design and user experience.</p>
+                            <a href="blog.html">Read on Blog</a>
                         </div>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">2024</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>akylzhanov.r@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+1 (555) 123-4567</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Available for Remote Work</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form" action="https://formspree.io/f/akylzhanov.r@gmail.com" method="POST">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+        <hr class="m-0">
+
+        <!-- Skills Section -->
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+            <div class="w-100">
+                <h2 class="mb-5">Skills & Technologies</h2>
+
+                <div class="subheading mb-3">Programming Languages & Frameworks</div>
+                <ul class="list-inline dev-icons">
+                    <li class="list-inline-item"><i class="fab fa-html5" title="HTML5"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-css3-alt" title="CSS3"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-js-square" title="JavaScript"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-react" title="React"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-node-js" title="Node.js"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-python" title="Python"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-git-alt" title="Git"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-docker" title="Docker"></i></li>
+                </ul>
+
+                <div class="subheading mb-3">Technical Skills</div>
+                <ul class="fa-ul mb-0">
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Algorithm Design & Analysis</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Data Structures Implementation</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Full-Stack Web Development</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Database Design & Optimization</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Mathematical Modeling</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Machine Learning Fundamentals</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Software Architecture & Design Patterns</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Performance Optimization</li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Rauan Akylzhanov. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
