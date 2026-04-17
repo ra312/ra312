@@ -3,7 +3,7 @@
 [![Visits](https://badges.pufler.dev/visits/ra312/ra312)](https://badges.pufler.dev/visits/ra312/ra312)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Contributor-blue)](https://github.com/ra312)
 
-*Pure mathematics · machine learning research*
+*Computer Science and Applied Mathematics · foundational machine learning research*
 
 Almaty, Kazakhstan · [ra312.github.io](https://ra312.github.io) · [akylzhanov.r@gmail.com](mailto:akylzhanov.r@gmail.com)
 
