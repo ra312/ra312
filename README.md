@@ -3,93 +3,102 @@
 [![Visits](https://badges.pufler.dev/visits/ra312/ra312)](https://badges.pufler.dev/visits/ra312/ra312)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Contributor-blue)](https://github.com/ra312)
 
-*Computer Science and Applied Mathematics · foundational machine learning research*
+*foundational machine learning research*
 
 Almaty, Kazakhstan · [ra312.github.io](https://ra312.github.io) · [akylzhanov.r@gmail.com](mailto:akylzhanov.r@gmail.com)
 
 ## About
 
-Mathematician and research engineer working at the interface of **non-commutative harmonic analysis** and **machine learning**. I focus on **tabular foundation models**, transformer architectures for mixed-type and structured data, and **LLM evaluation**—from synthetic pre-training and causal priors to benchmarking and agentic workflows.
+Mathematician and research engineer working at the interface of ** harmonic analysis** and **machine learning**. 
 
-## Current research
+---
 
-> Under what conditions do synthetic data-generating priors let a tabular transformer—trained only on synthetic distributions—generalise to unseen real-world data without task-specific fine-tuning?
+## Research
 
-At **[HighSky](https://highsky.io)** I pre-train transformers on synthetic data from Bayesian priors and structural causal graphs, aiming for strong transfer to real tabular benchmarks. In parallel I extend **Hörmander–Mikhlin** multiplier theory to general von Neumann algebras.
+**Core question:** How do neural representations transition between monosemantic and polysemantic regimes, and what structures govern this behaviour?
 
-**Note:** [Compressing long contexts with log-signatures](https://ra312.github.io/log-signature-attention.html) (March 2026)
+My primary focus is **mechanistic interpretability** — understanding how internal representations evolve during training, how monosemantic features emerge and break down, and how to build a more rigorous grounded theory of neural feature representation structure rather than solely relying on empirical heuristics alone.
 
-## Publications & impact
+I use **log-signature representations** of sequences as structured probes of how transformers compress contextual information. Path signatures provide a graded algebraic basis that isolates contributions from different interaction orders.
 
-- **Papers:** 14 total (12 peer-reviewed + 2 preprints)
-- **Citations:** 220+
-- **h-index:** 7
+I am interested to explore toy principles of feature superposition via lens of n-interacting particles system. The latter approach hasn been first developed here.
 
-*Metrics from Google Scholar, 2026.*
+---
 
-Full CV, talks, funding, and teaching: **[ra312.github.io](https://ra312.github.io)**
+## Projects
+
+**[KazByte](https://arxiv.org/abs/2603.27859)** `arXiv:2603.27859`
+Byte-level transformer adapter for Kazakh built on frozen Qwen2.5-7B.
+Entropy-based dynamic patching (BLT-style) addresses the tokenizer fertility problem for agglutinative morphology. ~8M trainable parameters, trained on DGX-2 in collaboration with ISSAI, Nazarbayev University.
+
+**A zero-shot tabular transformer model**
+Per-feature transformer pretrained on synthetic causal priors across 10+ financial institution datasets in Kazakhstan, UAE, Armenia, and Indonesia. Zero-shot tabular inference without task-specific fine-tuning. Trained across 8× RTX 4090 with FSDP2 + LoRA.
+
+**LogicNet**
+Agentic tool-calling system with LangGraph orchestration for multi-step reasoning. Routes queries across fine-tuned models, symbolic solvers (SymPy), and API fallback based on topic classification and confidence thresholds.
+
+---
+
+## Selected Publications
+
+12 peer-reviewed articles · 2 preprints · 220+ citations · h-index 7
+
+
+- **Hörmander–Mikhlin type theorem on non-commutative spaces** (2018)
+  R. Akylzhanov, M. Ruzhansky, K. Tulenov · arXiv:2503.01240
+
+- **Lp–Lq multipliers on locally compact groups** (2020)
+  R. Akylzhanov, M. Ruzhansky · *Journal of Functional Analysis* 278(3)
+
+- **Smooth dense subalgebras and Fourier multipliers on compact quantum groups** (2018)
+  R. Akylzhanov, S. Majid, M. Ruzhansky · *Communications in Mathematical Physics* 362(3)
+
+- **Hardy–Littlewood, Hausdorff–Young–Paley inequalities and Lp–Lq Fourier multipliers
+  on compact homogeneous manifolds** (2019)
+  R. Akylzhanov, M. Ruzhansky, E. Nursultanov · *JMAA* 479(2)
+
+→ Full list at [Google Scholar](https://scholar.google.com)
+
+---
 
 ## Experience
 
-**2024 — present · Senior Research Engineer · [HighSky](https://highsky.io)**
+| | |
+|---|---|
+| 2024 – present | **Senior Research Engineer**, HighSky (highsky.io) — tabular foundation models, synthetic causal pre-training, LLM evaluation, agentic reasoning |
+| 2022 – 2024 | **Senior ML Engineer**, Delivery Hero SE — transformer-based retrieval, RAG over 10M+ product catalogues |
+| 2020 – 2022 | **ML Engineer**, KCell JSC — sequential modelling for 15M+ users, churn prediction, LTV estimation |
+| 2018 – 2020 | **Postdoctoral Research Associate**, Queen Mary University of London (EPSRC EP/R003025/1) |
+| 2017 – 2018 | **Research Associate**, Imperial College London (EPSRC EP/R003025/1) |
 
-- Tabular foundation models; per-feature transformers and attention for mixed-type data
-- Synthetic data from structural causal graphs and diverse Bayesian priors
-- LLM evaluation (MMLU, GSM8K, HellaSwag, HumanEval) and agentic multi-step reasoning
-
-**2022 — 2024 · Senior Machine Learning Engineer · Delivery Hero**
-
-- Transformer representation learning; RAG over large product catalogues
-- *Most Advanced Project*, Global Search Domain Project Week (Jan 2023)
-
-**2020 — 2022 · Machine Learning Engineer · KCell**
-
-- Sequential modelling at scale; churn and lifetime value
-- Representations for heterogeneous customer data
-
-**2018 — 2020 · Postdoctoral Research Associate (EPSRC EP/R003025/1) · Queen Mary University of London**
-
-- Harmonic analysis for Dirac-like operators on semi-finite von Neumann algebras
-- Quantum group Pontryagin duality
-
-**2017 — 2018 · Research Associate (EPSRC EP/R003025/1) · Imperial College London**
-
-- Compact quantum matrix groups; Schwartz kernels and pseudo-differential calculus on compact quantum groups
-
-## Research focus
-
-**Mathematics**  
-Fourier multipliers on von Neumann algebras, compact quantum groups, Hörmander–Mikhlin theorems, non-commutative $L^p$-spaces, Paley-type inequalities.
-
-**Machine learning**  
-Tabular foundation models, structural causal models, attention for mixed-type data, synthetic pre-training priors, RAG, LLM evaluation.
+---
 
 ## Education
 
-**PhD, Pure Mathematics (2014–2019)** — Imperial College London  
-Thesis: $L^p$–$L^q$ Fourier multipliers on locally compact groups · Advisor: Prof. Michael Ruzhansky
+| | |
+|---|---|
+| 2014 – 2019 | **PhD Pure Mathematics**, Imperial College London · supervisor: Michael Ruzhansky · examiners: Fulvio Ricci, Ari Laptev |
+| 2012 – 2014 | **MSc Mathematics**, Eurasian National University |
+| 2007 – 2012 | **Specialist Mathematics & CS** (With Honours), Lomonosov Moscow State University |
 
-**MSc, Mathematics (2012–2014)** — Eurasian National University
+---
 
-**Specialist, Mathematics & Computer Science with Honours (2007–2012)** — Lomonosov Moscow State University
+## Funding & Awards
 
-## Languages & tools
+- **Kazakhstan Ministry of Science Grant** (PI, under review 2026–2028) · £175K · Fourier multipliers on noncommutative spaces
+- **EPSRC EP/R003025/1** (Co-I, 2017–2020) · £500K · Harmonic analysis in semi-finite von Neumann algebras
+- **Doris Chen Merit Award**, Imperial College London (2016)
+- **EPSRC Doctoral Studentship**, Imperial College London (2014–2018)
 
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?logo=tensorflow&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?logo=scikit-learn&logoColor=white)
-![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?logo=jupyter&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?logo=kubernetes&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?logo=linux&logoColor=black)
+---
 
-*Also:* Vertex AI, Kubeflow, Airflow, CI/CD.
+## Collaborators
+
+Michael Ruzhansky (Imperial / Ghent) · Shahn Majid (QMUL) · Terry Lyons FRS (Oxford) ·
+Yulia Kuznetsova (Franche-Comté) · Fedor Sukochev (UNSW, planned)
+
+---
 
 ## Contact
 
-- **Email:** [akylzhanov.r@gmail.com](mailto:akylzhanov.r@gmail.com)
-- **Site:** [ra312.github.io](https://ra312.github.io)
-- **GitHub:** [@ra312](https://github.com/ra312)
+[ra312.github.io](https://ra312.github.io) · [akylzhanov.r@gmail.com](mailto:akylzhanov.r@gmail.com) · `+7 701 211 4844`
